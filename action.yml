@@ -1,0 +1,11 @@
+name: 'Shopify Theme Lint'
+description: 'Lint Shopify themes'
+branding:
+  icon: 'wind'
+  color: 'blue'
+outputs:
+  status:
+    description: 'Check output for errors'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
