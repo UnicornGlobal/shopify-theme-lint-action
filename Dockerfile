@@ -5,4 +5,6 @@ LABEL "homepage"="https://github.com/actions"
 
 RUN npm install -g @shopify/theme-lint
 
-ENTRYPOINT ["theme-lint", "."]
+COPY entrypoint.sh /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
